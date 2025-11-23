@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await fetch("https://server-wcps.onrender.com/create-checkout-session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ priceId }), // <-- updated line
+        body: JSON.stringify({ priceId }),
       });
 
       const session = await response.json();
